@@ -315,6 +315,23 @@
     background-color: transparent;
 }
 
+.reason-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reason-title{
+    text-align: center;
+    color: rgb(30, 50, 107);
+}
+
+.reason-text{
+    text-align: center;
+    color: rgb(30, 50, 107);
+    max-width: 75%;
+}
+
 .logo-footer {
     align-items: center;
     justify-self: center;
@@ -364,6 +381,9 @@ footer a:hover {
 }
 
 .logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 50svh;
     width: 100%;
     height: auto;
