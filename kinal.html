@@ -5,47 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/icono.png" type="image/png">
-    <title>Pagina Principal | Fundación kinal</title>
+    <link rel="stylesheet" href="./assets/css/page.css">
+    <link rel="icon" type="img/icon" href="./assets/img/icono.png">
+    <title>Página Principal | Fundación kinal</title>
 
 </head>
 
-<body class="principal-body">
-    <header class="conteiner-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark mt-1">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" arcia-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" arcia-current="page" href="biog.html">Biografia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" arcia-current="page" href="kinal.html">Pagína web</a>
-                </li>
-            </ul>
+<body class="page-body">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <section class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Tema personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="biog.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="kinal.html">Página web</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </nav>
-        <button id="btn" aria-label="Abrir menú" style="background-color: transparent;">
-            <img src="https://img.icons8.com/pixels/32/FFFFFF/menu.png" alt="Menú">
-        </button>
-        <section id="sidebar" class="sidebar">
-            <section class="sidebar-header"> <img src="./assets/img/fundacion-kinal.png" alt="Logo"
-                    class="sidebar-logo"></section>
-            <a class="nav-link active" arcia-current="page" href="#">Apoyanos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Quienes somos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Educación</a>
-            <a class="nav-link active" arcia-current="page" href="#">Anitugos Alumnos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Bolsa de empleo</a>
-            <a class="nav-link active" arcia-current="page" href="#">Blog</a>
-        </section>
+        <nav class="sidebar-container">
+            <button id="btn" aria-label="Abrir menú" class="sidebar-button">
+                <img src="./assets/img/menu.png" alt="Logo-sidebar">
+            </button>
+            <section id="sidebar" class="sidebar">
+                <a class="nav-link active" arcia-current="page" href="#">Apoyanos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Quienes somos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Educación</a>
+                <a class="nav-link active" arcia-current="page" href="#">Anitugos Alumnos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Bolsa de empleo</a>
+                <a class="nav-link active" arcia-current="page" href="#">Blog</a>
+            </section>
+        </nav>
 
     </header>
     <main>
+        <section class="principal-content">
+            <video autoplay muted loop playsinline aria-hidden="true" class="demostration-video">
+                <source src="assets/video/kinal.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="slogan-container">
+            <img class="slogan" src="./assets/img/frase.png" alt="frase de kinal">
+        </section>
+        <section class="text-container">
+            <h2 class="kinal-title"><b>TU CAMINO AL ÉXITO ESTÁ EN KINAL</b></h2>
+            <p class="kinal-text">Kinal es un Centro Educativo privado, no lucrativo, dirigido a la formación técnica
+                profesional de
+                jóvenes y adultos, de beneficio colectivo y asistencia social en favor de los sectores más necesitados
+                de la comunidad.
 
-
-        <img src="./assets/img/fundacion-kinal.png" alt="logo" class="principal-img">
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                Nuestro valor fundamental es enseñar a realizar el trabajo bien hecho, que sea la base de la
+                superación de alumnos y el medio para servir a los demás.</p>
+        </section>
+        <section id="carouselExampleCaptions" class="carousel-slide" data-bs-ride="carousel">
             <section class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -65,108 +88,121 @@
                     <img src="./assets/img/mecanica.jpg" class="d-block w-100" alt="...">
                 </section>
             </section>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
         </section>
         <section>
-            <h2 class="web-title">TU CAMINO AL ÉXITO ESTÁ EN KINAL</h2>
-            <p class="web-subtitle">Kinal es un Centro Educativo privado, no lucrativo, dirigido a la formación
-                técnica
-                profesional de jóvenes y adultos, de beneficio colectivo y asistencia social en favor de los sectores
-                más
-                necesitados de la comunidad.
-                Nuestro valor fundamental es enseñar a realizar el trabajo bien hecho, que sea la base de la
-                superación de
-                alumnos y el medio para servir a los demás.</p>
+            <h3 class="program-title"><b>Centro Educativo Tecnico Laboral Kinal</b></h3>
         </section>
-
-        <section class="presentation-target row">
-            <section class="col-lg-8">
-                <section class="row g-4 mb-4">
-                    <section class="col-md-6">
-                        <section class="card h-100">
-                            <img src="./assets/img/tics.jpg" class="card-img-top" alt="">
-                            <section class="card-body">
-                                <h5 class="card-title">Ciclo Básico | 11-13 Años</h5>
-                                <p class="card-text">Kinal ofrece su programa de Educación General Básica para todos
-                                    aquellos jóvenes que buscan una orientación técnica y excelencia académica.</p>
-                                <a href="#" class="btn btn-secondary">Ver</a>
-                            </section>
-                        </section>
-                    </section>
-                    <section class="col-md-6">
-                        <section class="card h-100">
-                            <img src="./assets/img/mecanica.jpg" class="card-img-top" alt="">
-                            <section class="card-body">
-                                <h5 class="card-title">Diversificado | 15-18 Años</h5>
-                                <p class="card-text">Durante 3 años se prepara al joven de forma técnica y académica, el
-                                    egresado estará listo para trabajar en el ramo técnico de la especialidad que eligió
-                                    estudiar; el título obtenido le permitirá ingresar a la universidad.</p>
-                                <a href="#" class="btn btn-secondary">Ver</a>
-                            </section>
+        <section class="presentation-target container">
+            <section class="row g-4 mb-4 justify-content-center">
+                <section class="col-lg-4 col-md-6">
+                    <section class="card h-100">
+                        <img src="./assets/img/tics.jpg" class="card-img-top" alt="">
+                        <section class="card-body">
+                            <h5 class="card-title">Ciclo Básico | 11-13 Años</h5>
+                            <p class="card-text">Kinal ofrece su programa de Educación General Básica para todos
+                                aquellos jóvenes que buscan una orientación técnica y excelencia académica.</p>
+                            <a href="#" class="btn btn-secondary">Ver</a>
                         </section>
                     </section>
                 </section>
-                <section class="row g-4 mb-4">
-                    <section class="col-md-6">
-                        <section class="card h-100">
-                            <img src="./assets/img/eleccom.jpg" class="card-img-top" alt="">
-                            <section class="card-body">
-                                <h5 class="card-title">Escuela técnica | Adultos</h5>
-                                <p class="card-text">Contamos con más de 30 especialidades técnicas y tecnológicas que
-                                    pueden favorecer tu crecimiento y/o tu inserción laboral.</p>
-                                <a href="#" class="btn btn-secondary">Ver</a>
-                            </section>
-                        </section>
-                    </section>
-                    <section class="col-md-6">
-                        <section class="card h-100">
-                            <img src="./assets/img/electricidad.jpg" class="card-img-top" alt="">
-                            <section class="card-body">
-                                <h5 class="card-title">Programas para tu negocio</h5>
-                                <p class="card-text">Podemos diseñar conjuntamente el programa de formación profesional
-                                    que mejor se adapte a tus necesidades de capacitación.</p>
-                                <a href="#" class="btn btn-secondary">Ver</a>
-                            </section>
+                <section class="col-lg-4 col-md-6">
+                    <section class="card h-100">
+                        <img src="./assets/img/mecanica.jpg" class="card-img-top" alt="">
+                        <section class="card-body">
+                            <h5 class="card-title">Diversificado | 15-18 Años</h5>
+                            <p class="card-text">Durante 3 años se prepara al joven de forma técnica y académica, el
+                                egresado estará listo para trabajar en el ramo técnico de la especialidad que eligió
+                                estudiar; el título obtenido le permitirá ingresar a la universidad.</p>
+                            <a href="#" class="btn btn-secondary">Ver</a>
                         </section>
                     </section>
                 </section>
-                <section class="row justify-content-center">
-                    <section class="col-md-8">
-                        <section class="card text-center">
-                            <img src="./assets/img/universitario.png" class="card-img-top mx-auto d-block"
-                                style="width:200px;">
-                            <section class="card-body">
-                                <h5 class="card-title">Técnico universitario</h5>
-                                <p class="card-text">Dirigido al fortalecimiento de mandos medios y especialmente
-                                    aquellos que han cursado una carrera técnica y desean continuar con estudios a nivel
-                                    universitario. Estos estudios son avalados por la Universidad del Istmo./p>
-                                    <a href="#" class="btn btn-secondary">Ver</a>
-                            </section>
+                <section class="col-lg-4 col-md-6">
+                    <section class="card h-100">
+                        <img src="./assets/img/eleccom.jpg" class="card-img-top" alt="">
+                        <section class="card-body">
+                            <h5 class="card-title">Escuela técnica | Adultos</h5>
+                            <p class="card-text">Contamos con más de 30 especialidades técnicas y tecnológicas que
+                                pueden favorecer tu crecimiento y/o tu inserción laboral.</p>
+                            <a href="#" class="btn btn-secondary">Ver</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row g-4 mb-4 justify-content-center">
+                <section class="col-lg-6 col-md-6">
+                    <section class="card h-100">
+                        <img src="./assets/img/electricidad.jpg" class="card-img-top" alt="">
+                        <section class="card-body">
+                            <h5 class="card-title">Programas para tu negocio</h5>
+                            <p class="card-text">Podemos diseñar conjuntamente el programa de formación profesional que
+                                mejor se adapte a tus necesidades de capacitación.</p>
+                            <a href="#" class="btn btn-secondary">Ver</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="col-lg-6 col-md-6">
+                    <section class="card text-center h-100">
+                        <img class="universitario-card" src="./assets/img/universitario.png">
+                        <section class="card-body">
+                            <h5 class="card-title">Técnico universitario</h5>
+                            <p class="card-text">Dirigido al fortalecimiento de mandos medios y especialmente aquellos
+                                que han cursado una carrera técnica y desean continuar con estudios a nivel
+                                universitario. Estos estudios son avalados por la Universidad del Istmo.</p>
+                            <a href="#" class="btn btn-secondary">Ver</a>
                         </section>
                     </section>
                 </section>
             </section>
         </section>
-        <section class="video-section">
-            <video controls autoplay muted>
+        <section class="program-title">
+            <h3> <b>Fundación kinal </b><br><img src="./assets/img/icono.png" alt=""></h3>
+        </section>
+        <section class="video-container">
+            <video controls autoplay muted class="video-section">
                 <source src="assets/video/videoplayback.mp4" type="video/mp4">
             </video>
         </section>
         <section>
-            <section>
-                <img src="./assets/img/antiguo.png" alt="imagen-antiguo">
-            </section>
+            <h3 class="old-title"> <b>Antiguos alumnos</b></h3>
+        </section>
+        <section class="old-container">
+            <img class="old-image" src="./assets/img/antiguo.png" alt="imagen-antiguo">
+            <h4 class="text-information" style="font-size: medium;">
+                <b style="font-size: large;">¿ERES ANTIGUO ALUMNO?</b>
+                <br>¡LAS EMPRESAS TE ESTÁN BUSCANDO!
+            </h4>
+            <p class="student-text">Durante 2023 recibimos más de 600 solicitudes de trabajo para nuestros antiguos
+                alumnos.</p>
+        </section>
+        <section class="old-container">
+            <img class="old-image" src="./assets/img/instalaciones.png" alt="instalaciones">
+            <h4 class="text-information" style="font-size: larger;">
+                ¡NECESITAMOS MÁS JÓVENES DE ESTE LADO!</h4>
+            <p class="student-text">Cada donación que haces ayuda a la educación de un joven guatemalteco de escasos
+                recursos a tener una educación de calidad.</p>
         </section>
     </main>
+    <footer>
+        <section class="info-container">
+            <section class="correos">
+                <h5>Contactanos</h5>
+                <p>infocet@kinal.org.gt</p>
+                <p>infobas@kinal.org.gt</p>
+                <p>infoets@kinal.org.gt</p>
+                <p>infotic@kinal.org.gt</p>
+            </section>
+            <section>
+                <img class="logo-footer" src="./assets/img/fundacion-kinal1.png" alt="">
+            </section>
+            <section>
+                <p>6 avenida 13-54 zona 7, Colonia Landívar, 01007 Ciudad de Guatemala, Guatemala, C.A.</p>
+            </section>
+        </section>
+        <section>
+            <p>FUNDACIÓN KINAL | 2024 TODOS LOS DERECHOS RESERVADOS</p>
+        </section>
+    </footer>
 
 </body>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
