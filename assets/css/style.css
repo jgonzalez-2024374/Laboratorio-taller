@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-image: url('../img/fnd.jpg');
 }
@@ -33,3 +34,130 @@ h2{
   letter-spacing: 2px; 
 }
 
+=======
+.principal-body {
+  margin: 0;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.navbar{
+    background-color: transparent;
+    border: rgb(30, 50, 107) 3px solid;
+    border-radius: 10px;
+}
+
+.nav-link{
+    color: rgb(30, 50, 107)!important;
+    font-family: 'Robot', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.navbar-toggler{
+    border-color: rgb(30, 50, 107);
+}
+
+.favorite-title{
+    text-align: center;
+    margin-top: 4.2rem;
+    color: rgb(30, 50, 107);
+    font-family: 'Robot', sans-serif;
+    margin-bottom: 5svh;
+}
+
+.container{
+  border-bottom: rgb(30, 50, 107) 3px solid;
+  width: 60%;
+}
+
+.paragraph {
+  text-align: center;
+  max-width: 60ch;
+  color:rgb(30, 50, 107);
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.video1{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 2svh;
+  margin-bottom: 1svh;
+
+}
+
+.demostration-video{
+  width: 70%  ;
+  border-radius: 10px;
+  margin-bottom: 3svh;
+
+}
+
+.title{
+  text-align: center;
+  margin-top: 3svh;
+  color: rgb(30, 50, 107);
+  margin-bottom: 2svh;
+}
+
+.demostration-video1{
+  border-radius: 10px;
+  width: 30svh;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  width: 30vh;      
+  height:30svh;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2svh;
+}
+
+
+.biography-container {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  border-bottom: rgb(30, 50, 107) 3px solid;
+}
+
+.biography-paragraph {
+  text-align: center;
+  max-width: 60ch;
+  color:rgb(30, 50, 107);
+  font-size: x-large;
+
+}
+
+.biography-title{
+  color: rgb(30, 50, 107);
+}
+
+@media (max-width: 768px) {
+  .biography-paragraph {
+    text-align: left;
+  }}
+
+@media (max-width: 768px) {
+  .paragraph {
+    text-align: left;
+  }}
+
+  
+>>>>>>> feature/renovation-page
