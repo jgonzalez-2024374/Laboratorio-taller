@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/page.css">
-    <link rel="icon" href="./assets/img/icono.png" type="image/png">
+    <link rel="icon" type="img/icon" href="./assets/img/icono.png">
     <title>Página Principal | Fundación kinal</title>
 
 </head>
@@ -34,17 +34,19 @@
                 </section>
             </section>
         </nav>
-        <button id="btn" aria-label="Abrir menú" class="sidebar-button">
-            <img src="./assets/img/menu.png" alt="Logo-sidebar">
-        </button>
-        <section id="sidebar" class="sidebar">
-            <a class="nav-link active" arcia-current="page" href="#">Apoyanos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Quienes somos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Educación</a>
-            <a class="nav-link active" arcia-current="page" href="#">Anitugos Alumnos</a>
-            <a class="nav-link active" arcia-current="page" href="#">Bolsa de empleo</a>
-            <a class="nav-link active" arcia-current="page" href="#">Blog</a>
-        </section>
+        <nav class="sidebar-container">
+            <button id="btn" aria-label="Abrir menú" class="sidebar-button">
+                <img src="./assets/img/menu.png" alt="Logo-sidebar">
+            </button>
+            <section id="sidebar" class="sidebar">
+                <a class="nav-link active" arcia-current="page" href="#">Apoyanos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Quienes somos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Educación</a>
+                <a class="nav-link active" arcia-current="page" href="#">Anitugos Alumnos</a>
+                <a class="nav-link active" arcia-current="page" href="#">Bolsa de empleo</a>
+                <a class="nav-link active" arcia-current="page" href="#">Blog</a>
+            </section>
+        </nav>
 
     </header>
     <main>
@@ -88,7 +90,7 @@
             </section>
         </section>
         <section>
-            <h3 class="program-title">Centro Educativo Tecnico Laboral Kinal</h3>
+            <h3 class="program-title"><b>Centro Educativo Tecnico Laboral Kinal</b></h3>
         </section>
         <section class="presentation-target container">
             <section class="row g-4 mb-4 justify-content-center">
@@ -154,7 +156,7 @@
             </section>
         </section>
         <section class="program-title">
-            <h3> Fundación kinal <br><img src="./assets/img/icono.png" alt=""></h3>
+            <h3> <b>Fundación kinal </b><br><img src="./assets/img/icono.png" alt=""></h3>
         </section>
         <section class="video-container">
             <video controls autoplay muted class="video-section">
@@ -162,38 +164,45 @@
             </video>
         </section>
         <section>
-            <h3 class="old-title"> Antiguos alumnos</h3>
+            <h3 class="old-title"> <b>Antiguos alumnos</b></h3>
         </section>
         <section class="old-container">
             <img class="old-image" src="./assets/img/antiguo.png" alt="imagen-antiguo">
-            <h4 class="text-information">
-                ¿ERES ANTIGUO ALUMNO?
-                ¡LAS EMPRESAS TE ESTÁN BUSCANDO!</h4>
+            <h4 class="text-information" style="font-size: medium;">
+                <b style="font-size: large;">¿ERES ANTIGUO ALUMNO?</b>
+                <br>¡LAS EMPRESAS TE ESTÁN BUSCANDO!
+            </h4>
+            <p class="student-text">Durante 2023 recibimos más de 600 solicitudes de trabajo para nuestros antiguos
+                alumnos.</p>
         </section>
         <section class="old-container">
             <img class="old-image" src="./assets/img/instalaciones.png" alt="instalaciones">
-            <h4 class="text-information">
-                ¿ERES ANTIGUO ALUMNO?
-                ¡LAS EMPRESAS TE ESTÁN BUSCANDO!</h4>
+            <h4 class="text-information" style="font-size: larger;">
+                ¡NECESITAMOS MÁS JÓVENES DE ESTE LADO!</h4>
+            <p class="student-text">Cada donación que haces ayuda a la educación de un joven guatemalteco de escasos
+                recursos a tener una educación de calidad.</p>
         </section>
-
     </main>
-        <footer>
-            <section class="info-container">
-                <section class="correos">
-                    <h5>Contactanos</h5>
-                    <p>infocet@kinal.org.gt</p>
-                    <p>infobas@kinal.org.gt</p>
-                    <p>infoets@kinal.org.gt</p>
-                    <p>infotic@kinal.org.gt</p>
-                </section>
-                <section>
-                    <img class="logo-footer" src="./assets/img/fundacion-kinal.png" alt="">
-                </section>
-                <section><p>6 avenida 13-54 zona 7, Colonia Landívar, 01007 Ciudad de Guatemala, Guatemala, C.A.</p></section>
+    <footer>
+        <section class="info-container">
+            <section class="correos">
+                <h5>Contactanos</h5>
+                <p>infocet@kinal.org.gt</p>
+                <p>infobas@kinal.org.gt</p>
+                <p>infoets@kinal.org.gt</p>
+                <p>infotic@kinal.org.gt</p>
             </section>
-            <section><p>FUNDACIÓN KINAL | 2024 TODOS LOS DERECHOS RESERVADOS</p></section>
-        </footer>
+            <section>
+                <img class="logo-footer" src="./assets/img/fundacion-kinal1.png" alt="">
+            </section>
+            <section>
+                <p>6 avenida 13-54 zona 7, Colonia Landívar, 01007 Ciudad de Guatemala, Guatemala, C.A.</p>
+            </section>
+        </section>
+        <section>
+            <p>FUNDACIÓN KINAL | 2024 TODOS LOS DERECHOS RESERVADOS</p>
+        </section>
+    </footer>
 
 </body>
 <script src="https://unpkg.com/@popperjs/core@2"></script>

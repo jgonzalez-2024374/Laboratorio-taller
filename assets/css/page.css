@@ -1,7 +1,7 @@
 .page-body {
     margin: 0;
     min-height: 100vh;
-    background-image: url('../img/fondoEscolar.jpg');
+    background-image: url('../img/fondoEscolar.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,50 +10,42 @@
 
 .navbar {
     background-color: transparent;
-    border: rgb(11, 49, 123) 2px solid;
+    border: rgb(30, 50, 107) 2px solid;
     border-radius: 10px;
 }
 
 .nav-link {
-    color: rgb(11, 49, 123) !important;
+    color: rgb(30, 50, 107) !important;
     font-family: 'Robot';
     font-weight: 100;
     font-size: 1.2rem;
 }
 
 .navbar-toggler {
-    border-color: rgb(11, 49, 123);
+    border-color: rgb(30, 50, 107);
 }
-
-.sidebar-button {
-    background-color: transparent;
-    border-color: transparent;
-}
-
 
 .sidebar {
-    transform: translateY(8%);
-    font-family: 'Robot;';
-    font-size: xx-large;
-    color: white;
     position: fixed;
-    left: -220px;
-    top: 0;
+    left: 0;
     width: 220px;
     height: 100vh;
-    background-color: transparent;
+    background-color: white;
+    color: white;
     padding: 20px;
-    transition: left 0.3s ease;
+    box-sizing: border-box;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 
 .sidebar.active {
-    left: 0;
+    transform: translateX(0);
 }
 
-.sidebar-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.content {
+    flex: 1;
+    padding: 30px;
 }
 
 .principal-content {
@@ -118,6 +110,12 @@
     font-family: 'Robot';
 }
 
+@media(max-width:767px) {
+    .kinal-title {
+        font-size: large;
+    }
+}
+
 .kinal-text {
     text-align: center;
     color: rgb(11, 49, 123);
@@ -127,6 +125,11 @@
     margin-bottom: 2svh;
 }
 
+@media(max-width:767px) {
+    .kinal-text {
+        font-size: small;
+    }
+}
 
 #carouselExampleCaptions {
     width: 550px;
@@ -148,11 +151,8 @@
 
 @media(max-width:767px) {
     #carouselExampleCaptions {
-        width: 45svh;
+        width: 40svh;
         height: auto;
-        border-radius: 50%;
-        overflow: hidden;
-        transform: translateY(170px);
         margin-top: -20svh;
         margin-bottom: 25svh;
     }
@@ -160,7 +160,7 @@
 
 @media(max-width:767px) {
     #carouselExampleCaptions img {
-        height: 45svh;
+        height: 40svh;
         object-fit: cover;
 
     }
@@ -189,8 +189,31 @@
 .program-title {
     text-align: center;
     margin-bottom: 2svh;
-    color: rgb(11, 49, 123);
+    color: rgb(30, 50, 107);
     font-family: 'Robot';
+}
+
+@media(max-width:767px) {
+    .program-title {
+        font-size: larger;
+    }
+}
+
+.card-title {
+    font-family: 'Robot', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    background-color: rgb(30, 50, 107);
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .video-container {
@@ -237,7 +260,8 @@
 
 .old-title {
     text-align: center;
-    color: rgb(11, 49, 123) !
+    color: rgb(30, 50, 107);
+    font-family: 'Robot';
 }
 
 .old-container {
@@ -255,11 +279,32 @@
     margin-bottom: 20px;
 }
 
+@media(max-width:767px) {
+    .old-image {
+        width: 35svh;
+    }
+}
+
+@media(min-width:767px)and (max-width:1020px) {
+    .old-image {
+    width: 50svh;
+    height: auto;
+    margin-bottom: 20px;
+}
+}
 
 .text-information {
-    color: #025995;
-    font-size: 1.5rem;
+    color: rgb(30, 50, 107);
+    font-size: x-large;
     font-weight: bold;
+    font-family: 'Robot', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.student-text {
+    color: rgb(30, 50, 107);
+    font-family: 'Robot', sans-serif;
+    font-size: small;
 }
 
 .info-container {
@@ -267,7 +312,7 @@
     flex-direction: column;
     width: 100%;
     height: 50svh;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .logo-footer {
@@ -278,7 +323,7 @@
 }
 
 footer {
-    background-color:  rgb(30, 50, 107);
+    background-color: rgb(30, 50, 107);
     color: #ffffff;
     padding: 40px 20px;
     font-family: Arial;
@@ -303,6 +348,10 @@ footer a:hover {
     margin-bottom: 30px;
 }
 
+.correos {
+    margin-bottom: 1svh;
+    border-color: #ffffff;
+}
 
 .correos h5 {
     margin-bottom: 10px;
