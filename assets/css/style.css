@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-body{
-    background-image: url('../img/fnd.jpg');
-}
-
-h1{
-    font-size: 80px;
-   font-family: 'Anton', sans-serif;
-  color: white; 
-  text-transform: uppercase; 
-  text-shadow: 6px 6px 8px #000; 
-  letter-spacing: 3px;
-    
-}
-
-h2{
-    font-size: 50px;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 3px 6px #000; 
-  letter-spacing: 3px
-}    
-
-.content{
-    font-size: 28px;
-    text-align: justify;
-    margin: 0 auto; 
-    max-width: 700px;
-    margin-top: 20px;
-    font-family: 'anton', sans-serif;
-  color: #e63946; 
-  text-shadow: 2px 2px 4px black; 
-  letter-spacing: 2px; 
-}
-
-=======
 .principal-body {
   margin: 0;
   background-image: url('../img/bg.png');
@@ -160,4 +123,4 @@ h2{
   }}
 
   
->>>>>>> feature/renovation-page
+
